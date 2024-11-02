@@ -36,7 +36,7 @@ runs:
         path: ./.github/.env
         export-variables: true
         keys-case: bypass
-    - name: Install libavutils
+    - name: Install ffmpeg dependencies
       shell: bash
       run: sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev libavfilter-dev libavdevice-dev
     - name: Install Node
