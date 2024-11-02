@@ -2510,7 +2510,7 @@ dependencies = [
 [[package]]
 name = "webrtcperf-vmaf-utils"
 version = "0.1.0"
-source = "git+https://github.com/vpalmisano/webrtcperf-vmaf-utils#97e782fbcd0b787ccc28b5f906d07b62032d2ee1"
+source = "git+https://github.com/vpalmisano/webrtcperf-vmaf-utils#640650d74bdcdef03cd5f7e8024a90c63bc705ed"
 dependencies = [
  "chrono",
  "clap",
