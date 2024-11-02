@@ -61,10 +61,10 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@webrtcperf-vmaf-utils-js/win32-x64-msvc": "0.1.0",
-    "@webrtcperf-vmaf-utils-js/darwin-x64": "0.1.0",
-    "@webrtcperf-vmaf-utils-js/darwin-arm64": "0.1.0",
-    "@webrtcperf-vmaf-utils-js/linux-x64-gnu": "0.1.0",
-    "@webrtcperf-vmaf-utils-js/linux-arm64-gnu": "0.1.0"
+    "@webrtcperf-vmaf-utils-js/win32-x64-msvc": "0.1.1",
+    "@webrtcperf-vmaf-utils-js/darwin-x64": "0.1.1",
+    "@webrtcperf-vmaf-utils-js/darwin-arm64": "0.1.1",
+    "@webrtcperf-vmaf-utils-js/linux-x64-gnu": "0.1.1",
+    "@webrtcperf-vmaf-utils-js/linux-arm64-gnu": "0.1.1"
   }
 }
