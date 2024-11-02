@@ -8,7 +8,12 @@ fn watermark(mut cx: FunctionContext) -> JsResult<JsPromise> {
     let id: Handle<JsString> = cx.argument::<JsString>(1)?;
     let id: String = id.value(&mut cx);
 
-    let (_sender, receiver) = unbounded();
+    let (sender, receiver) = unbounded();
+    ctrlc::set_handler(move || {
+        sender.send("stop").expect("Error sending signal");
+    })
+    .expect("Error setting Ctrl-C handler");
+
     let (deferred, promise) = cx.promise();
     let channel = cx.channel();
 
@@ -39,7 +44,12 @@ fn process(mut cx: FunctionContext) -> JsResult<JsPromise> {
     let file_path: Handle<JsString> = cx.argument::<JsString>(0)?;
     let file_path: String = file_path.value(&mut cx);
 
-    let (_sender, receiver) = unbounded();
+    let (sender, receiver) = unbounded();
+    ctrlc::set_handler(move || {
+        sender.send("stop").expect("Error sending signal");
+    })
+    .expect("Error setting Ctrl-C handler");
+
     let (deferred, promise) = cx.promise();
     let channel = cx.channel();
 
@@ -68,6 +78,7 @@ fn process(mut cx: FunctionContext) -> JsResult<JsPromise> {
 
 #[neon::main]
 fn main(mut cx: ModuleContext) -> NeonResult<()> {
+    env_logger::init();
     cx.export_function("watermark", watermark)?;
     cx.export_function("process", process)?;
     Ok(())

@@ -2531,6 +2531,8 @@ name = "webrtcperf-vmaf-utils-js"
 version = "0.1.0"
 dependencies = [
  "crossbeam-channel",
+ "ctrlc",
+ "env_logger",
  "neon",
  "webrtcperf-vmaf-utils",
 ]

@@ -15,3 +15,5 @@ neon = "1"
 crossbeam-channel = "0.5.13"
 
 webrtcperf-vmaf-utils = { git = "https://github.com/vpalmisano/webrtcperf-vmaf-utils" }
+env_logger = "0.11.5"
+ctrlc = "3.4.5"
