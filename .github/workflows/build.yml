@@ -62,7 +62,8 @@ jobs:
             const linux = platforms.Linux.map(platform => {
               return { os: "ubuntu-latest", platform, script: "cross" };
             });
-            return [...macOS, ...windows, ...linux];
+            #return [...macOS, ...windows, ...linux];
+            return [...linux];
 
   binaries:
     name: Binaries

@@ -1,0 +1,17 @@
+# webrtcperf-vmaf-utils-js
+
+Node bindings of the `webrtcperf-vmaf-utils-js` library (https://github.com/vpalmisano/webrtcperf-vmaf-utils-js).
+
+## Installation
+```bash
+npm install @vpalmisano/webrtcperf-vmaf-utils-js
+```
+
+## Usage
+```js
+import { watermark, process } from "@vpalmisano/webrtcperf-vmaf-utils-js"
+
+await watermark("video/file.mp4", "1")
+
+await process("video/file.mp4")
+```
