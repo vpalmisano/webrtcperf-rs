@@ -15,7 +15,6 @@
   "description": "Utility for processing real time videos for VMAF evaluation.",
   "main": "./lib/index.cjs",
   "scripts": {
-    "install": "npm run build",
     "test": "tsc && cargo test",
     "cargo-build": "tsc && cargo build --message-format=json-render-diagnostics > cargo.log",
     "cross-build": "tsc && cross build --message-format=json-render-diagnostics > cross.log",
