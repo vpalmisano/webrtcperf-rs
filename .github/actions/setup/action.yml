@@ -74,3 +74,6 @@ runs:
       shell: bash
       run: |
         echo version=$(cargo -Vv | fgrep release: | cut -d' ' -f2) | tee -a $GITHUB_OUTPUT
+    - name: Install libavutils
+      shell: bash
+      run: sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev
