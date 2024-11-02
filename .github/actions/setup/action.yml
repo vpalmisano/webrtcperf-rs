@@ -38,7 +38,8 @@ runs:
         keys-case: bypass
     - name: Install ffmpeg dependencies
       shell: bash
-      run: sudo apt-get update && sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev libavfilter-dev libavdevice-dev libtesseract-dev
+      run: sudo apt-get update && sudo apt-get install -y libavutil-dev libavcodec-dev \
+        libavformat-dev libavfilter-dev libavdevice-dev libtesseract-dev libssl-dev
     - name: Install Node
       uses: actions/setup-node@v3
       with:
