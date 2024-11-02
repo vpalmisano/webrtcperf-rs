@@ -1,7 +1,7 @@
 {
-  "name": "webrtcperf-vmaf-utils-js",
+  "name": "@vpalmisano/webrtcperf-vmaf-utils",
   "version": "0.1.0",
-  "description": "",
+  "description": "Utility for processing real time videos for VMAF evaluation.",
   "main": "./lib/index.cjs",
   "scripts": {
     "test": "tsc &&cargo test",
