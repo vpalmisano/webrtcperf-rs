@@ -59,8 +59,8 @@ jobs:
             const windows = platforms.Windows.map(platform => {
               return { os: "windows-latest", platform, script: "build" };
             });
-            const linux = platforms.Linux.map(platform => {
-              return { os: "ubuntu-24.04", platform, script: "cross" };
+            const linux = platforms.Linux.filter(platform => platform === "linux-x64-gnu").map(platform => {
+              return { os: "ubuntu-24.04", platform, script: "build" };
             });
             return [...linux];
 
