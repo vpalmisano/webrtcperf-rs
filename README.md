@@ -1,4 +1,4 @@
-# @vpalmisano/webrtcperf-rs
+# webrtcperf-rs
 Rust utilities for webrtcperf (https://github.com/vpalmisano/@vpalmisano/webrtcperf).
 
 ## Installation
