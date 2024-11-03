@@ -1,5 +1,5 @@
 # webrtcperf-rs
-Rust utilities for webrtcperf (https://github.com/vpalmisano/@vpalmisano/webrtcperf).
+Rust utilities for webrtcperf (https://github.com/vpalmisano/webrtcperf).
 
 ## Installation
 ```bash
