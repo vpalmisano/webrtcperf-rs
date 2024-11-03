@@ -20,6 +20,16 @@
     "arch": "arm64",
     "abi": "gnu"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs.git"
+  },
+  "author": {
+    "name": "Vittorio Palmisano",
+    "url": "https://github.com/vpalmisano"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "AGPL-3.0-or-later"
 }
