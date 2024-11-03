@@ -1,7 +1,7 @@
 {
   "name": "@vpalmisano/webrtcperf-rs-linux-arm64-gnu",
   "description": "Prebuilt binary package for `@vpalmisano/webrtcperf-rs` on `linux-arm64-gnu`.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "os": [
     "linux"
   ],
