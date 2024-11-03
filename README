@@ -1,15 +1,14 @@
 # @vpalmisano/webrtcperf-rs
-
-Node bindings of the `@vpalmisano/webrtcperf-rs` library (https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs).
+Rust utilities for webrtcperf (https://github.com/vpalmisano/@vpalmisano/webrtcperf).
 
 ## Installation
 ```bash
-npm install @vpalmisano/@vpalmisano/webrtcperf-rs
+npm install @vpalmisano/webrtcperf-rs
 ```
 
 ## Usage
 ```js
-import { watermark, process } from "@vpalmisano/@vpalmisano/webrtcperf-rs"
+import { watermark, process } from "@vpalmisano/webrtcperf-rs"
 
 await watermark("video/file.mp4", "1")
 

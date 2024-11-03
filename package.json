@@ -12,7 +12,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "description": "Utility for processing real time videos for VMAF evaluation.",
+  "description": "Rust utilities for webrtcperf.",
   "main": "./lib/index.cjs",
   "scripts": {
     "test": "tsc && cargo test",
@@ -48,7 +48,7 @@
   ],
   "neon": {
     "type": "library",
-    "org": "@@vpalmisano/webrtcperf-rs",
+    "org": "@vpalmisano/webrtcperf-rs",
     "platforms": "common",
     "load": "./src/load.cts"
   },
@@ -60,5 +60,12 @@
   },
   "dependencies": {
     "@neon-rs/load": "^0.1.73"
+  },
+  "optionalDependencies": {
+    "@vpalmisano/webrtcperf-rs/win32-x64-msvc": "0.1.0",
+    "@vpalmisano/webrtcperf-rs/darwin-x64": "0.1.0",
+    "@vpalmisano/webrtcperf-rs/darwin-arm64": "0.1.0",
+    "@vpalmisano/webrtcperf-rs/linux-x64-gnu": "0.1.0",
+    "@vpalmisano/webrtcperf-rs/linux-arm64-gnu": "0.1.0"
   }
 }

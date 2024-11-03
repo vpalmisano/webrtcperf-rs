@@ -1,5 +1,5 @@
 {
-  "name": "@@vpalmisano/webrtcperf-rs/darwin-arm64",
+  "name": "@vpalmisano/webrtcperf-rs/darwin-arm64",
   "description": "Prebuilt binary package for `@vpalmisano/webrtcperf-rs` on `darwin-arm64`.",
   "version": "0.1.0",
   "os": [
