@@ -7,11 +7,11 @@
 
 module.exports = require('@neon-rs/load').proxy({
   platforms: {
-    'win32-x64-msvc': () => require('@webrtcperf-vmaf-utils-js/win32-x64-msvc'),
-    'darwin-x64': () => require('@webrtcperf-vmaf-utils-js/darwin-x64'),
-    'darwin-arm64': () => require('@webrtcperf-vmaf-utils-js/darwin-arm64'),
-    'linux-x64-gnu': () => require('@webrtcperf-vmaf-utils-js/linux-x64-gnu'),
-    'linux-arm64-gnu': () => require('@webrtcperf-vmaf-utils-js/linux-arm64-gnu')
+    'win32-x64-msvc': () => require('@@vpalmisano/webrtcperf-rs/win32-x64-msvc'),
+    'darwin-x64': () => require('@@vpalmisano/webrtcperf-rs/darwin-x64'),
+    'darwin-arm64': () => require('@@vpalmisano/webrtcperf-rs/darwin-arm64'),
+    'linux-x64-gnu': () => require('@@vpalmisano/webrtcperf-rs/linux-x64-gnu'),
+    'linux-arm64-gnu': () => require('@@vpalmisano/webrtcperf-rs/linux-arm64-gnu')
   },
   debug: () => require('../index.node')
 });

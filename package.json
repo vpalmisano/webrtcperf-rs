@@ -1,9 +1,9 @@
 {
-  "name": "@vpalmisano/webrtcperf-vmaf-utils-js",
-  "version": "0.1.2",
+  "name": "@vpalmisano/webrtcperf-rs",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vpalmisano/webrtcperf-vmaf-utils-js.git"
+    "url": "https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs.git"
   },
   "author": {
     "name": "Vittorio Palmisano",
@@ -48,7 +48,7 @@
   ],
   "neon": {
     "type": "library",
-    "org": "@webrtcperf-vmaf-utils-js",
+    "org": "@@vpalmisano/webrtcperf-rs",
     "platforms": "common",
     "load": "./src/load.cts"
   },

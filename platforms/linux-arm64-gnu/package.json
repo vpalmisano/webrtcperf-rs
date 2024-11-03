@@ -1,6 +1,6 @@
 {
-  "name": "@webrtcperf-vmaf-utils-js/linux-arm64-gnu",
-  "description": "Prebuilt binary package for `webrtcperf-vmaf-utils-js` on `linux-arm64-gnu`.",
+  "name": "@@vpalmisano/webrtcperf-rs/linux-arm64-gnu",
+  "description": "Prebuilt binary package for `@vpalmisano/webrtcperf-rs` on `linux-arm64-gnu`.",
   "version": "0.1.0",
   "os": [
     "linux"

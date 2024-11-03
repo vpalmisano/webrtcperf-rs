@@ -1,3 +1,3 @@
-# `@webrtcperf-vmaf-utils-js/win32-x64-msvc`
+# `@@vpalmisano/webrtcperf-rs/win32-x64-msvc`
 
-Prebuilt binary package for `webrtcperf-vmaf-utils-js` on `win32-x64-msvc`.
+Prebuilt binary package for `@vpalmisano/webrtcperf-rs` on `win32-x64-msvc`.

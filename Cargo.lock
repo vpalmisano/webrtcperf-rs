@@ -2508,6 +2508,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "webrtcperf-rs"
+version = "0.1.0"
+dependencies = [
+ "crossbeam-channel",
+ "ctrlc",
+ "env_logger",
+ "neon",
+ "webrtcperf-vmaf-utils",
+]
+
+[[package]]
 name = "webrtcperf-vmaf-utils"
 version = "0.1.0"
 source = "git+https://github.com/vpalmisano/webrtcperf-vmaf-utils#640650d74bdcdef03cd5f7e8024a90c63bc705ed"
@@ -2524,17 +2535,6 @@ dependencies = [
  "regex",
  "reqwest",
  "tesseract-rs",
-]
-
-[[package]]
-name = "webrtcperf-vmaf-utils-js"
-version = "0.1.0"
-dependencies = [
- "crossbeam-channel",
- "ctrlc",
- "env_logger",
- "neon",
- "webrtcperf-vmaf-utils",
 ]
 
 [[package]]

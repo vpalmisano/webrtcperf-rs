@@ -1,3 +1,3 @@
-# `@webrtcperf-vmaf-utils-js/darwin-x64`
+# `@@vpalmisano/webrtcperf-rs/darwin-x64`
 
-Prebuilt binary package for `webrtcperf-vmaf-utils-js` on `darwin-x64`.
+Prebuilt binary package for `@vpalmisano/webrtcperf-rs` on `darwin-x64`.
