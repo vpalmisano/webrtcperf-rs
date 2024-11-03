@@ -58,14 +58,14 @@ jobs:
         if: ${{ !inputs.dryrun }}
         shell: bash
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          if [[ -z $GITHUB_TOKEN ]]; then
-            echo "::error::Secret GITHUB_TOKEN is not defined for this GitHub repo."
+          if [[ -z $NPM_TOKEN ]]; then
+            echo "::error::Secret NPM_TOKEN is not defined for this GitHub repo."
             echo "::error::To publish to npm, this action requires:"
             echo "::error:: • an npm access token;"
             echo "::error:: • with Read-Write access to this project's npm packages;"
-            echo "::error:: • stored as a repo secret named GITHUB_TOKEN."
+            echo "::error:: • stored as a repo secret named NPM_TOKEN."
             echo "::error::See https://docs.npmjs.com/about-access-tokens for info about creating npm tokens."
             echo "::error:: 💡 The simplest method is to create a Classic npm token of type Automation."
             echo "::error:: 💡 For greater security, consider using a Granual access token."
@@ -128,7 +128,7 @@ jobs:
       - name: Publish
         shell: bash
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           for p in ./dist/*.tgz ; do
             npm publish --access public $p
