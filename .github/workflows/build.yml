@@ -31,7 +31,7 @@ on:
 jobs:
   matrix:
     name: Matrix
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       matrix: ${{ steps.matrix.outputs.result }}
     steps:
@@ -60,7 +60,7 @@ jobs:
               return { os: "windows-latest", platform, script: "build" };
             });
             const linux = platforms.Linux.map(platform => {
-              return { os: "ubuntu-latest", platform, script: "build" };
+              return { os: "ubuntu-22.04", platform, script: "build" };
             });
             return [...linux];
 
@@ -113,7 +113,7 @@ jobs:
   main:
     name: Main
     needs: [matrix]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
