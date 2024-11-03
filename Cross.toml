@@ -3,7 +3,7 @@ default-target = "x86_64-unknown-linux-gnu"
 pre-build = [
     "dpkg --add-architecture $CROSS_DEB_ARCH", 
     "apt update",
-    "apt-get -y -o=APT::Architecture=$CROSS_DEB_ARCH install build-essential libclang-dev libssl-dev libavutil-dev libavcodec-dev libavformat-dev libavfilter-dev libavdevice-dev libtesseract-dev || true",
+    "apt-get -y -o=APT::Architecture=$CROSS_DEB_ARCH install build-essential pkg-config libclang-dev libssl-dev libavutil-dev libavcodec-dev libavformat-dev libavfilter-dev libavdevice-dev libtesseract-dev || true",
     "apt-get install -f -y -o=APT::Architecture=$CROSS_DEB_ARCH"
 ]
 
