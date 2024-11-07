@@ -62,10 +62,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-win32-x64-msvc": "0.1.0",
-    "@vpalmisano/webrtcperf-rs-darwin-x64": "0.1.0",
-    "@vpalmisano/webrtcperf-rs-darwin-arm64": "0.1.0",
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "0.1.0",
-    "@vpalmisano/webrtcperf-rs-linux-arm64-gnu": "0.1.0"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.0"
   }
 }
