@@ -1,6 +1,6 @@
 {
   "name": "@vpalmisano/webrtcperf-rs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs.git"
@@ -24,7 +24,8 @@
     "build": "npm run cargo-build -- --release",
     "cross": "npm run cross-build -- --release",
     "pack:linux-x64-gnu": "NEON_BUILD_PLATFORM=linux-x64-gnu npm run build && mkdir -p dist && npm pack ./platforms/linux-x64-gnu --pack-destination=./dist && rm ./platforms/linux-x64-gnu/*.node",
-    "publish:all": "for p in ./dist/*.tgz; do npm publish --access public $p; done",
+    "pack:all": "npm run pack:linux-x64-gnu && npm pack --pack-destination=./dist ",
+    "publish:all": "for p in ./dist/*.tgz; do npm publish --access public $p; done && rm -rf ./dist",
     "//prepack": "tsc && neon update",
     "version": "neon bump --binaries platforms && git add .",
     "release": "gh workflow run release.yml -f dryrun=false -f version=patch",
@@ -64,6 +65,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.4"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.5"
   }
 }
