@@ -23,6 +23,7 @@
     "debug": "npm run cargo-build --",
     "build": "npm run cargo-build -- --release",
     "cross": "npm run cross-build -- --release",
+    "pack:x64": "NEON_BUILD_PLATFORM=linux-x64-gnu npm run build && mkdir -p dist && npm pack ./platforms/linux-x64-gnu --pack-destination=./dist && rm ./platforms/linux-x64-gnu/*.node",
     "//prepack": "tsc && neon update",
     "version": "neon bump --binaries platforms && git add .",
     "release": "gh workflow run release.yml -f dryrun=false -f version=patch",
