@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs.git"
+    "url": "https://github.com/vpalmisano/webrtcperf-rs.git"
   },
   "author": {
     "name": "Vittorio Palmisano",
@@ -65,6 +65,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.5"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.6"
   }
 }

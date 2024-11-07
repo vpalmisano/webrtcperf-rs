@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vpalmisano/@vpalmisano/webrtcperf-rs.git"
+    "url": "https://github.com/vpalmisano/webrtcperf-rs.git"
   },
   "author": {
     "name": "Vittorio Palmisano",
