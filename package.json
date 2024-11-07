@@ -23,7 +23,7 @@
     "debug": "npm run cargo-build --",
     "build": "npm run cargo-build -- --release",
     "cross": "npm run cross-build -- --release",
-    "prepack": "tsc && neon update",
+    "//prepack": "tsc && neon update",
     "version": "neon bump --binaries platforms && git add .",
     "release": "gh workflow run release.yml -f dryrun=false -f version=patch",
     "dryrun": "gh workflow run publish.yml -f dryrun=true",
@@ -62,6 +62,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.0"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.3"
   }
 }
