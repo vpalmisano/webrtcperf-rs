@@ -23,12 +23,13 @@
     "debug": "npm run cargo-build --",
     "build": "npm run cargo-build -- --release",
     "cross": "npm run cross-build -- --release",
-    "pack:x64": "NEON_BUILD_PLATFORM=linux-x64-gnu npm run build && mkdir -p dist && npm pack ./platforms/linux-x64-gnu --pack-destination=./dist && rm ./platforms/linux-x64-gnu/*.node",
+    "pack:linux-x64-gnu": "NEON_BUILD_PLATFORM=linux-x64-gnu npm run build && mkdir -p dist && npm pack ./platforms/linux-x64-gnu --pack-destination=./dist && rm ./platforms/linux-x64-gnu/*.node",
+    "publish:all": "for p in ./dist/*.tgz; do npm publish --access public $p; done",
     "//prepack": "tsc && neon update",
     "version": "neon bump --binaries platforms && git add .",
     "release": "gh workflow run release.yml -f dryrun=false -f version=patch",
     "dryrun": "gh workflow run publish.yml -f dryrun=true",
-    "clean": "rm -rf target dist lib *.log *.node"
+    "clean": "rm -rf target dist lib *.log *.node dist"
   },
   "license": "AGPL-3.0-or-later",
   "exports": {
@@ -63,6 +64,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.3"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.4"
   }
 }
