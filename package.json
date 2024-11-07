@@ -65,6 +65,6 @@
     "@neon-rs/load": "^0.1.73"
   },
   "optionalDependencies": {
-    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.6"
+    "@vpalmisano/webrtcperf-rs-linux-x64-gnu": "^0.1.7"
   }
 }
